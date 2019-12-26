@@ -15,9 +15,9 @@
   "inlineSpriteFrames_native": true,
   "mergeStartScene": false,
   "optimizeHotUpdate": false,
-  "md5Cache": true,
+  "md5Cache": false,
   "encryptJs": false,
-  "xxteaKey": "277b1b66-b65b-47",
+  "xxteaKey": "40cda9cf-f145-49",
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {
