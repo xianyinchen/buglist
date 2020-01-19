@@ -31,17 +31,13 @@ export default class Helloworld extends cc.Component {
     }
     clickEvent(e: cc.Event,data: any) {
         if(data === "back") {
-            setTimeout(() => {
-                cc.director.loadScene("start");
-            },500);
+            cc.director.loadScene("start");
         }
     }
     private clearPath(): void {
         if(this.gtxArr[0]) {
-            setInterval(()=>{
-                this.gtxArr[0].strokeColor = new cc.Color(255,0,0,255);
-                this.gtxArr[0].clear();
-            }, 1000)
+            this.gtxArr[0].strokeColor = new cc.Color(255,0,0,255);
+            this.gtxArr[0].clear();
         }
     }
     private convertNodeSpace(location: cc.Vec2): cc.Vec2 {

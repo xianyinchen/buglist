@@ -2,7 +2,10 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-
+        ptnode: {
+            default: null,
+            type: cc.Node
+        }
     },
     start() {
 
@@ -36,6 +39,8 @@ cc.Class({
     },
 
     update: function (dt) {
-
+        var pt = this.ptnode.convertToWorldSpaceAR(new cc.Vec2(0, 0));
+        var collider = cc.director.getPhysicsManager().testPoint(pt);
+        console.log(collider)        
     },
 });
